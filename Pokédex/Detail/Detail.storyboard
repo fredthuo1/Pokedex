@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dyr-ZY-417">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="E87-YR-ZjS">
+            <objects>
+                <viewController id="Dyr-ZY-417" customClass="DetailViewController" customModule="Pokédex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ftx-yW-5Mx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jkj-eZ-gN5">
+                                <rect key="frame" x="20" y="157" width="374" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLi-A8-1ZN">
+                                <rect key="frame" x="20" y="438" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Types: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlj-lk-MFg">
+                                <rect key="frame" x="20" y="497" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wfz-WO-ys5">
+                                <rect key="frame" x="20" y="563" width="374" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Yn-SE-jlv"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Play Audio">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="Dyr-ZY-417" eventType="touchUpInside" id="TCw-BJ-IhX"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="O5A-0D-Bx3">
+                                <rect key="frame" x="197" y="438" width="19" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6Db-2o-c5e"/>
+                                    <constraint firstAttribute="width" secondItem="O5A-0D-Bx3" secondAttribute="height" multiplier="19:20" id="7tY-fU-Nq5"/>
+                                    <constraint firstAttribute="width" constant="50" id="dWJ-yO-khA"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ecy-1Q-lDQ" firstAttribute="trailing" secondItem="jkj-eZ-gN5" secondAttribute="trailing" constant="20" id="2o5-Hy-6nK"/>
+                            <constraint firstItem="VLi-A8-1ZN" firstAttribute="leading" secondItem="Ecy-1Q-lDQ" secondAttribute="leading" constant="20" id="417-xn-LbX"/>
+                            <constraint firstItem="VLi-A8-1ZN" firstAttribute="top" secondItem="jkj-eZ-gN5" secondAttribute="bottom" constant="150" id="4kH-12-b3r"/>
+                            <constraint firstItem="Ecy-1Q-lDQ" firstAttribute="bottom" secondItem="Wfz-WO-ys5" secondAttribute="bottom" constant="200" id="I34-Eg-sfK"/>
+                            <constraint firstItem="qlj-lk-MFg" firstAttribute="leading" secondItem="Ecy-1Q-lDQ" secondAttribute="leading" constant="20" id="M2M-hZ-Wxj"/>
+                            <constraint firstItem="jkj-eZ-gN5" firstAttribute="top" secondItem="Ecy-1Q-lDQ" secondAttribute="top" constant="20" id="PYJ-Lv-iC2"/>
+                            <constraint firstItem="jkj-eZ-gN5" firstAttribute="leading" secondItem="Ecy-1Q-lDQ" secondAttribute="leading" constant="20" id="e37-j8-lfM"/>
+                            <constraint firstItem="Wfz-WO-ys5" firstAttribute="leading" secondItem="Ecy-1Q-lDQ" secondAttribute="leading" constant="20" id="eLN-Xs-18R"/>
+                            <constraint firstItem="Ecy-1Q-lDQ" firstAttribute="trailing" secondItem="Wfz-WO-ys5" secondAttribute="trailing" constant="20" id="te9-B8-dWV"/>
+                            <constraint firstItem="qlj-lk-MFg" firstAttribute="top" secondItem="jkj-eZ-gN5" secondAttribute="bottom" constant="212" id="vaJ-X6-jss"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ecy-1Q-lDQ"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="playButton" destination="Wfz-WO-ys5" id="gWO-B7-lQa"/>
+                        <outlet property="pokémonHeight" destination="VLi-A8-1ZN" id="GJw-ET-qf8"/>
+                        <outlet property="pokémonImage" destination="jkj-eZ-gN5" id="X00-eH-M7t"/>
+                        <outlet property="pokémonTypes" destination="qlj-lk-MFg" id="Xs4-BK-ngC"/>
+                        <outlet property="spinner" destination="O5A-0D-Bx3" id="3id-3o-rb2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNB-oL-KUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+</document>
